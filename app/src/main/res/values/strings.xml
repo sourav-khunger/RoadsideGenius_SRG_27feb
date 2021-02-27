@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RoadsideGenius</string>
+    <string name="title_activity_maps">Map</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="titleDashboard"></string>
+    <string name="account_balance">Account Balance</string>
+    <string name="balance_currency">$</string>
+    <string name="balance_amount">524.99</string>
+    <string name="plus_sign">+</string>
+</resources>

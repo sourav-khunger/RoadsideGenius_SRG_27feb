@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/bgColor"
+    tools:context=".Activities.Driver.EditActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title=""
+        app:titleTextColor="@color/white">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Customer Job Details"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Customer Name"
+                        android:textColor="?attr/textColor" />
+
+                    <TextView
+                        android:id="@+id/fullNameET"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/et_bg_blue"
+                        android:gravity="center_vertical"
+                        android:inputType="textPersonName"
+                        android:paddingHorizontal="20dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Customer Email"
+                        android:textColor="?attr/textColor"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/customerEmailET"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/et_bg_blue"
+                        android:gravity="center_vertical"
+                        android:inputType="textEmailAddress"
+                        android:paddingHorizontal="20dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Contact Number"
+                        android:textColor="?attr/textColor"
+                        android:textStyle="normal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/et_bg_blue"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/contactNumberTxt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".9"
+                            android:paddingHorizontal="20dp"
+                            android:text="Contact Number"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                        <ImageView
+                            android:id="@+id/contactDialogButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight=".1"
+                            android:src="@drawable/ic_baseline_local_phone_24"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Pickup Location"
+                        android:textColor="?attr/textColor"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/getPickupLocationET"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/et_bg_blue"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        android:paddingHorizontal="20dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Drop-off Location"
+                        android:textColor="?attr/textColor"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/getDropOffLocationET"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/et_bg_blue"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        android:paddingHorizontal="20dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Vendor "
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/vendorIDSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/et_bg_blue"
+                        android:inputType="textEmailAddress"
+                        android:paddingHorizontal="20dp"
+                        android:visibility="gone" />
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginHorizontal="20dp"-->
+                    <!--                        android:layout_marginTop="10dp"-->
+                    <!--                        android:fontFamily="@font/poppins_regular"-->
+
+                    <!--                        android:text="Amount Quoted"-->
+                    <!--                        android:textColor="?attr/textColor"-->
+                    <!--                        android:textStyle="normal" />-->
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/amount_quoted"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="45dp"-->
+                    <!--                        android:layout_marginHorizontal="10dp"-->
+                    <!--                        android:background="@drawable/et_bg_blue"-->
+                    <!--                        android:gravity="center_vertical"-->
+                    <!--                        android:inputType="textEmailAddress"-->
+                    <!--                        android:paddingHorizontal="20dp"-->
+                    <!--                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="Vehicle Make"
+                                android:textColor="?attr/textColor" />
+
+                            <TextView
+                                android:id="@+id/vehicleMakeEt"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginHorizontal="10dp"
+                                android:background="@drawable/et_bg_blue"
+                                android:gravity="center_vertical"
+                                android:inputType="text"
+                                android:paddingHorizontal="15dp"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="Vehicle Model"
+                                android:textColor="?attr/textColor" />
+
+                            <TextView
+                                android:id="@+id/vehicleModelEt"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="50dp"
+                                android:layout_marginHorizontal="10dp"
+                                android:background="@drawable/et_bg_blue"
+                                android:gravity="center_vertical"
+                                android:inputType="text"
+                                android:paddingHorizontal="15dp"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="Vehicle Color"
+                                android:textColor="?attr/textColor" />
+
+                            <TextView
+                                android:id="@+id/vehicleColor"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="50dp"
+                                android:layout_marginHorizontal="10dp"
+                                android:background="@drawable/et_bg_blue"
+                                android:gravity="center_vertical"
+                                android:inputType="text"
+                                android:paddingHorizontal="15dp"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                  <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Invoice Total"
+                        android:textColor="?attr/textColor" />
+
+                    <TextView
+                        android:id="@+id/invoiceTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/et_bg_blue"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingHorizontal="15dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Description"
+                        android:textColor="?attr/textColor" />
+
+                    <TextView
+                        android:id="@+id/notesET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/et_bg_blue"
+                        android:gravity="top"
+                        android:hint="Write Instruction here..."
+                        android:maxLines="10"
+                        android:inputType="textMultiLine"
+                        android:minHeight="100dp"
+                        android:paddingHorizontal="15dp"
+                        android:paddingTop="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <!--                    <LinearLayout-->
+                    <!--                        android:visibility="gone"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginHorizontal="10dp"-->
+                    <!--                        android:orientation="vertical">-->
+
+
+                    <!--                        <TextView-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_marginHorizontal="10dp"-->
+                    <!--                            android:text="Payment Method"-->
+                    <!--                            android:textColor="?attr/textColor" />-->
+
+                    <!--                        <Spinner-->
+                    <!--                            android:id="@+id/paymentMethodSpinner"-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="45dp"-->
+                    <!--                            android:background="@drawable/et_bg_blue"-->
+                    <!--                            android:paddingHorizontal="20dp" />-->
+                    <!--                    </LinearLayout>-->
+
+
+                    <Button
+                        android:id="@+id/completeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginVertical="20dp"
+                        android:background="@drawable/button_bg_blue"
+                        android:text="Complete"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#fff"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

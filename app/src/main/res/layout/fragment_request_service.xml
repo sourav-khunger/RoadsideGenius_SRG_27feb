@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bgColor"
+    tools:context=".Activities.SignupActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/headerCircle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-50dp"
+                android:layout_marginTop="-340dp"
+                android:layout_marginRight="-50dp"
+                android:background="@drawable/circle"
+                android:visibility="gone">
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerCircle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="-80dp"
+                android:text="Request a service"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerCircle"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Customer Name"
+                    android:textColor="?attr/textColor"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/fullNameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/et_bg_blue"
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Customer Email"
+                    android:textColor="?attr/textColor"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/customerEmailET"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/et_bg_blue"
+                    android:inputType="textEmailAddress"
+                    android:paddingHorizontal="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Contact Number"
+                    android:textColor="?attr/textColor"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/et_bg_blue"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/contactNumberTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".9"
+                        android:paddingHorizontal="20dp"
+                        android:text="Contact Number"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <ImageView
+                        android:id="@+id/contactDialogButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_baseline_edit_road_24" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Pickup Location"
+                    android:textColor="?attr/textColor"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/getPickupLocationET"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/et_bg_blue"
+                    android:inputType="text"
+                    android:paddingHorizontal="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Drop-off Location"
+                    android:textColor="?attr/textColor"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/getDropOffLocationET"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/et_bg_blue"
+                    android:inputType="text"
+                    android:paddingHorizontal="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Vendor "
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/vendorIDSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/et_bg_blue"
+                    android:inputType="textEmailAddress"
+                    android:paddingHorizontal="20dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Service Type"
+                    android:textColor="?attr/textColor"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/serviceTypeSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+
+                    android:background="@drawable/et_bg_blue"
+                    android:paddingHorizontal="20dp" />
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginHorizontal="10dp"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:text="Vehicle Type"-->
+                <!--                    android:textStyle="bold" />-->
+
+                <!--                <Spinner-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="45dp"-->
+                <!--                    android:background="@drawable/et_bg_blue"-->
+                <!--                    android:paddingHorizontal="20dp" />-->
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginHorizontal="10dp"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:text="Payment Method"-->
+                <!--                    android:textStyle="bold" />-->
+
+                <!--                <Spinner-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="45dp"-->
+                <!--                    android:background="@drawable/et_bg_blue"-->
+                <!--                    android:paddingHorizontal="20dp" />-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Amount"
+                    android:textColor="?attr/textColor"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/amount_quoted"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/et_bg_blue"
+                    android:inputType="textEmailAddress"
+                    android:paddingHorizontal="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Payment Method"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <Spinner
+                        android:id="@+id/paymentMethodSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/et_bg_blue"
+                        android:paddingHorizontal="20dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="10dp"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Notes"
+                    android:textColor="?attr/textColor"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/notesET"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/note_et"
+                    android:gravity="top"
+                    android:hint="Write instruction here..."
+                    android:padding="10dp" />
+
+                <Button
+                    android:id="@+id/requestButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:background="@drawable/button_bg_blue"
+                    android:text="Request"
+                    android:textColor="#fff" />
+
+                <!--        <android.widget.Button-->
+                <!--            android:layout_marginTop="10dp"-->
+                <!--            android:background="@drawable/button_bg_blue"-->
+                <!--            android:text="Sign up"-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            />-->
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

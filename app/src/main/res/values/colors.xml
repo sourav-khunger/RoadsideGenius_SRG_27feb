@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#2C2C2C</color>
+    <color name="purple_700">#4C4C4C</color>
+    <color name="teal_200">#434343</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="circle_color">#1162DA</color>
+    <color name="startedText">#FBC02D</color>
+    <color name="inprogress">#388E3C</color>
+
+    <array name="sample_progress_gradient">
+        <item>#121212</item>
+        <item>#757575</item>
+    </array>
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+</resources>

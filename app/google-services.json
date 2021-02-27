@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "693296440385",
+    "project_id": "roadsidegenius",
+    "storage_bucket": "roadsidegenius.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693296440385:android:626f526a9d8adcc6b992c0",
+        "android_client_info": {
+          "package_name": "com.doozycod.roadsidegenius"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "693296440385-1rhh55camcn9k2cj7n736140b59cr99s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.doozycod.roadsidegenius",
+            "certificate_hash": "691c6702195798e4964b6659f747d73f769127ab"
+          }
+        },
+        {
+          "client_id": "693296440385-h485ihhtoppde3tn5sh43mrmlvfueo77.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjfWHzvyeL20j_Gmx4fuHfOcUhhO8BXMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "693296440385-h485ihhtoppde3tn5sh43mrmlvfueo77.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
